@@ -13,17 +13,17 @@ form.addEventListener("submit", (event)=>{
     
 })
 
-function setError(input, errorMessage){
-    const errorMenssageElement = input.nextElementSibling
-    errorMenssageElement.textContent = errorMessage
-    input.parentElement.classList.add("error")
+function setError(input, errorMessage){ // vai em cada imput e add mensagem de erro
+    const errorMenssageElement = input.nextElementSibling // seleciona o elemento irmão
+    errorMenssageElement.textContent = errorMessage // conteudo de texto vai ser igual a mensagem de erro que foi enviada como parametro na função
+    input.parentElement.classList.add("error") // classe error é add dinamicamente (na DIV form control)
 }
 
 function resetError(){
     erroMessages.forEach((msg) =>{
     msg.textContent = ""
 })
-    nome.parentElement.classList.remove('error')
+     nome.parentElement.classList.remove('error')
      email.parentElement.classList.remove('error')
      assunto.parentElement.classList.remove('error')
      mensagem.parentElement.classList.remove('error')

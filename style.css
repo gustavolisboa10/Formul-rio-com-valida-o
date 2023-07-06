@@ -82,4 +82,18 @@ button:hover{
 
 }
 
+@media screen and (max-width:507px){
+ .container{
+    width: 400px;
+}
+
+}
+
+@media screen and (max-width:507px){
+ .container{
+    width: 350px;
+}
+
+}
+
 
